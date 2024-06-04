@@ -1,0 +1,30 @@
+.alias-title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.alias-releaseType {
+	font-size: 2.25rem;
+	text-align: center;
+	margin: 0.5em 0;
+	text-transform: lowercase;
+	letter-spacing: 5px;
+	// text-decoration: underline;
+}
+
+.alias-description {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.alias-releases {
+	display: flex;
+	grid-auto-rows: max-content;
+	grid-auto-columns: max-content;
+	// grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-rows: auto;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: self-end;
+	flex-wrap: wrap;
+}

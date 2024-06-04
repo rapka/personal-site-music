@@ -1,0 +1,102 @@
+$bottomPadding: 40px;
+
+.releasePage {
+
+}
+
+.releasePage-embed {
+  width: 100%;
+  max-width: 700px;
+}
+
+.releasePage-content {
+  // header height = 38px
+  min-height: calc(100vh - 38px - $bottomPadding);
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  padding-bottom: $bottomPadding;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.releasePage-title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  letter-spacing: 10px;
+  margin-top: 8px;
+  /*text-decoration: underline;*/
+}
+
+.releasePage-year {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.releasePage-label {
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+
+.releasePage-labelLabel,
+.releasePage-genresLabel,
+.releasePage-yearLabel
+ {
+  color: var(--dullGrey);
+}
+
+.releasePage-genres,
+.releasePage-desc,
+.releasePage-year,
+.releasePage-title,
+.releasePage-alias {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px;
+}
+
+.releasePage-alias {
+  margin-bottom: 0;
+  letter-spacing: 8px;
+  font-size: 2rem;
+}
+
+.releasePage-genres {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.releasePage-desc {
+  font-size: 1.15rem;
+  max-width: 700px;
+  padding-bottom: 10px;
+}
+
+.releasePage-bandcamp {
+  // padding-top: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.releasePage-headerContainer {
+ width: 100%;
+ backdrop-filter: blur(10px);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 0.5rem;
+}
+
+.releasePage-header {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*border-radius: ;*/
+}

@@ -1,0 +1,40 @@
+.aliasSelector-container {
+  color: var(--pink);
+}
+
+.aliasOption {
+  font-size: 1.5rem;
+  margin: 2px 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  transition: font-size 100ms ease-in-out;
+
+  &.selected {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    text-decoration: underline;
+  }
+}
+
+.aliasOption-College-Hill {
+  color: var(--pink);
+}
+
+.aliasOption-Morphologist {
+  color: var(--green);
+}
+
+.aliasOption-Fury {
+  color: var(--purple);
+}
+
+.aliasSelector-container {
+  padding: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.aliasOption-divider {
+  color: var(--gray);
+  font-size: 1rem;
+}

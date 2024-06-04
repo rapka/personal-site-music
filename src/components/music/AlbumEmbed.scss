@@ -1,0 +1,57 @@
+.albumEmbed {
+  margin: 0.5rem 0;
+  // max-width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &.large {
+    max-width: 700px;
+  }
+
+  &.medium {
+    max-width: 400px;
+  }
+
+  &.small {
+    max-width: 250px;
+  }
+}
+
+.albumEmbed-art {
+  width: 100%;
+}
+
+.albumEmbed-title {
+  font-size: 2rem;
+  margin: 0;
+  /*text-decoration: underline;*/
+}
+
+.albumEmbed-label {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.albumEmbed-year {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.albumEmbed-genres {
+  font-size: 1.125rem;
+  margin-bottom: 6px;
+}
+
+.albumEmbed-desc {
+  font-size: 1.15rem;
+}
+
+.albumEmbed-artLink {
+  font-size: 0;
+}

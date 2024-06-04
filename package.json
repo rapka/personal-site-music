@@ -1,0 +1,70 @@
+{
+  "name": "personal-site",
+  "description": "collegehill.io",
+  "scripts": {
+    "createCname": "touch build/CNAME && echo 'collegehill.io' > build/CNAME",
+    "push": "git subtree split --prefix build -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
+    "deploy:old": "npm run clean && npm run build && npm run createCname && npm run push",
+    "postversion": "npm run build && git push && git push --tags && npm run deploy",
+    "flickr": "node scripts/processFlickr.mjs",
+    "lint:style": "stylelint \"src/**/*.css\"",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint:js": "eslint src",
+    "lint": "npm run lint:js && npm run lint:style",
+    "is-build-es5": "npx es-check es5 './build/**/*.!(esm).js'",
+    "format": "prettier-eslint --write -l error \"{src,scripts}/**/*.{js,mjs,json}\"",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve-g": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby clean && gatsby build && gh-pages -f -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapka/personal-site.git"
+  },
+  "license": "MIT",
+  "author": "Rae A <thecollegehill@gmail.com> (https://collegehill.io/)",
+  "bugs": {
+    "url": "https://github.com/rapka/personal-site/issues"
+  },
+  "homepage": "https://github.com/rapka/personal-site#readme",
+  "dependencies": {
+    "array-move": "^4.0.0",
+    "classnames": "^2.3.1",
+    "gatsby": "^4.16.0",
+    "hex-rgb": "^5.0.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-modal": "^3.15.1",
+    "react-youtube": "^9.0.2",
+    "sass": "^1.52.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@svgr/rollup": "^6.2.1",
+    "autoprefixer": "^10.4.4",
+    "es-check": "^6.2.1",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "gatsby-plugin-manifest": "^4.16.0",
+    "gatsby-plugin-react-helmet": "^5.16.0",
+    "gatsby-plugin-sass": "^5.16.0",
+    "gatsby-plugin-sitemap": "^5.16.0",
+    "gh-pages": "^4.0.0",
+    "node-fetch": "^3.2.4",
+    "prettier": "^2.6.2",
+    "prettier-eslint-cli": "^6.0.1",
+    "stylelint": "^14.8.5",
+    "stylelint-config-recommended": "^7.0.0"
+  }
+}

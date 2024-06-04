@@ -1,0 +1,48 @@
+@use 'global';
+
+.wordleHeader-titleRow svg {
+	display: block;
+	width: 36px;
+	height: 36px;
+	align-self: center;
+	cursor: pointer;
+}
+
+.header {
+	color: white;
+	padding: 1rem 1rem 0 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.header a {
+	color: white;
+	margin: 0 5px;
+	font-size: 1.3rem;
+}
+
+.header a:hover {
+	text-decoration: underline;
+}
+
+.questionIcon {
+	position: absolute;
+	left: 0;
+	z-index: 2;
+}
+
+.gearIcon {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+
+@media (max-width: 450px) {
+  .questionIcon {
+  	left: -12px;
+  }
+
+  .gearIcon {
+  	right: -12px;
+  }
+}
